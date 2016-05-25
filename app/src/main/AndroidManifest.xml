@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.marctweet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MarcTweetApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activities.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Facilitates user  -->
+        <activity android:name=".activities.LoginActivity" />
+
+        <!-- SearchService performs search requests against the twitter API -->
+        <service
+            android:name=".SearchService"
+            android:exported="false"/>
+
+        <!-- Required for fabric SDK integration -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3efbe8f31bf23b1ea994bdb477edd9f05055a2c8" />
+    </application>
+
+</manifest>

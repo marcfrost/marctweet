@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Useful resource: http://www.materialpalette.com/blue-grey/red -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+
+        <!-- App branding colour for the app bar -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- Darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <!-- Theme UI Controls like checkboxes & textfields -->
+        <item name="colorAccent">@color/accent</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MarcTweet</string>
+    <string name="login_success">%1$s sign in successful</string>
+    <string name="login_failure">Failed to authenticate user</string>
+    <string name="search_prompt">Enter hashtag to search for</string>
+    <string name="search_action">Search</string>
+    <string name="search_validation_error">Must be a single phrase hashtag (#example)</string>
+    <string name="search_error_io">Unable to search, are you sure you\'re connected to the interwebs?</string>
+    <string name="search_error_generic">Unfortunately there was a problem with your search, try again later</string>
+    <string name="user_image_description">Profile picture</string>
+    <string name="user_handle_format">\@%s</string>
+</resources>

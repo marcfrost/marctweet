@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF4CAF50</color>
+    <color name="primaryDark">#FF388E3C</color>
+    <color name="primaryLight">#FFC8E6C9</color>
+    <color name="text">@android:color/white</color>
+    <color name="primaryText">#FF212121</color>
+    <color name="secondaryText">#FF727272</color>
+    <color name="divider">#FFB6B6B6</color>
+    <color name="accent">#FF536DFE</color>
+    <color name="accentDark">#FF303F9F</color>
+</resources>
