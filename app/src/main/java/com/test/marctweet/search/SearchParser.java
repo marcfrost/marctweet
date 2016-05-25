@@ -1,4 +1,4 @@
-package com.test.marctweet;
+package com.test.marctweet.search;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

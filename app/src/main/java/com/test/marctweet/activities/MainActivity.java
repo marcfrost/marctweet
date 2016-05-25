@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.test.marctweet.Constants;
 import com.test.marctweet.R;
-import com.test.marctweet.SearchService;
+import com.test.marctweet.search.SearchService;
 import com.test.marctweet.adapters.StatusAdapter;
 import com.test.marctweet.model.Status;
 import com.twitter.sdk.android.Twitter;
@@ -78,8 +78,9 @@ public class MainActivity extends AppCompatActivity {
         mStatusAdapter = new StatusAdapter(this, data, new StatusAdapter.OnStatusClickedListener() {
             @Override
             public void onClick(Status status) {
-                // TODO:
-                Toast.makeText(MainActivity.this, String.format("TODO: Fullscreen display the @%s tweet", status.user.screenName), Toast.LENGTH_SHORT).show();
+                // TODO: Display Tweet in fullscreen
+                // could look at asking OS to display the tweet in the most appropriate app? (i.e. ACTION_VIEW)
+                Toast.makeText(MainActivity.this, String.format("TODO: display tweet fullscreen for @%s", status.user.screenName), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -177,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
         // with something more comprehensive later like a pre-compiled regular expression
         return !TextUtils.isEmpty(input) &&
                 input.startsWith("#") &&
+                input.length() > 1 &&
                 !input.contains(" ");
     }
 

@@ -2,6 +2,7 @@ package com.test.marctweet;
 
 import com.google.gson.JsonSyntaxException;
 import com.test.marctweet.model.Status;
+import com.test.marctweet.search.SearchParser;
 
 import org.junit.Test;
 

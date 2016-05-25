@@ -25,7 +25,7 @@
 
         <!-- SearchService performs search requests against the twitter API -->
         <service
-            android:name=".SearchService"
+            android:name=".search.SearchService"
             android:exported="false"/>
 
         <!-- Required for fabric SDK integration -->

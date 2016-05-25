@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             tools:text="\@UserHandle"
             android:maxLines="1"
+            android:textStyle="bold"
             />
 
         <TextView

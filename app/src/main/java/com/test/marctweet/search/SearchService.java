@@ -1,4 +1,4 @@
-package com.test.marctweet;
+package com.test.marctweet.search;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -11,6 +11,9 @@ import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+import com.test.marctweet.BuildConfig;
+import com.test.marctweet.Constants;
+import com.test.marctweet.R;
 import com.test.marctweet.model.Status;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
